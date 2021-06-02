@@ -38,7 +38,7 @@ def basic_view():
 @app.get('/predict', response_class=HTMLResponse)  # data input by forms
 def take_inp():
     return '''<form method="post"> 
-    <input type="text" maxlength="56" name="text" value="Text Emotion to be tested"/>  
+    <input type="text" maxlength="28" name="text" value="Text Emotion to be tested"/>  
     <input type="submit"/> 
     </form>'''
 
