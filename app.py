@@ -18,7 +18,7 @@ def preProcess_data(text):  # cleaning the data
 
 app = FastAPI()
 
-data = pd.read_csv(r'C:\Users\VYANKATESH\Desktop\Deployment Project\project1\Sentiment.csv')
+data = pd.read_csv('Sentiment.csv')
 tokenizer = Tokenizer(num_words=2000, split=' ')
 tokenizer.fit_on_texts(data['text'].values)
 
